@@ -1,0 +1,11 @@
+.button{
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 100px;
+    height: 60px;
+    border-style: solid;
+    border-color: #ffffff59;
+    border-width: 0;
+}
+
