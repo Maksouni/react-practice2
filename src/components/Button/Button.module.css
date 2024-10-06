@@ -9,3 +9,7 @@
     border-width: 0;
 }
 
+.button:hover{
+    background-color: white;
+}
+

@@ -11,7 +11,7 @@ export default function Button(props) {
 
   return (
     <button className={styles.button} style={buttonStyle}>
-      {props.text}
+      {props.text || 'Button'}
     </button>
   );
 }
