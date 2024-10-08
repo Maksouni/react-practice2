@@ -2,8 +2,6 @@
 import './App.css'
 import Button from './components/Button/Button'
 import NavBar from './components/NavBar/NavBar'
-import Slide from './components/Slider/Slide/Slide'
-import { Slider } from './components/Slider/Slider'
 
 function App() {
   const slideData = [
@@ -24,14 +22,14 @@ function App() {
     },
   ]
 
-  const slides = slideData.map((slide, index) => (
-    <Slide key={index} startup={slide.startup} title={slide.title} text={slide.text} />
-  ));
+  // const slides = slideData.map((slide, index) => (
+  //   <Slide key={index} startup={slide.startup} title={slide.title} text={slide.text} />
+  // ));
 
   return (
     <>
       <header><NavBar /></header>
-      <Slider items={slides} />
+
       
     </>
   )
