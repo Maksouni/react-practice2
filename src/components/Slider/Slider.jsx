@@ -27,7 +27,7 @@ export function Slider({items}){
             }}
             >
                 <Arrows />
-                <Slide />
+                {items[currentIndex]}
             </SliderContext.Provider>
         </div>
     )
