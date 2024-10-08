@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import { createContext, useState } from "react"
 import Arrows from "./Arrows/Arrows";
+import Slide from "./Slide/Slide";
 
 export const SliderContext = createContext();
 
@@ -26,6 +27,7 @@ export function Slider({items}){
             }}
             >
                 <Arrows />
+                <Slide />
             </SliderContext.Provider>
         </div>
     )
