@@ -2,6 +2,7 @@
 import './App.css'
 import Button from './components/Button/Button'
 import NavBar from './components/NavBar/NavBar'
+import Slider from './components/Slider/Slider'
 
 function App() {
   const slideData = [
@@ -29,7 +30,7 @@ function App() {
   return (
     <>
       <header><NavBar /></header>
-
+      <Slider />
       
     </>
   )
