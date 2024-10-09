@@ -1,99 +1,37 @@
-.slider {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  & .slide-list {
-    display: flex;
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-    & .slide {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex: 1 0 100%;
-      max-width: 730px;
-      
-      position: relative;
+.slide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  
 
-      & .slide-startup {
-        font-weight: 700;
-        font-size: 24px;
-      }
-
-      & .slide-title {
-        font-weight: 700;
-        font-size: 72px;
-      }
-
-      & .slide-text {
-        font-weight: 500;
-        font-size: 22px;
-        text-align: center;
-      }
-    }
+  & .startup{
+    font-size: 24px;
+    font-weight: 700;
   }
 
-  & .dots {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    position: relative;
-    z-index: 2;
-
-    & .dot {
-      background-color: #e7e7e7;
-      border-radius: 5px;
-      height: 10px;
-      margin: 5px;
-      width: 10px;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      &.selected {
-        background-color: green;
-      }
-    }
+  & .title{
+    font-size: 72px;
+    font-weight: 700;
   }
 
-
-  & .arrows {
-    color: white;
-    display: flex;
-    font-size: 30px;
-    justify-content: space-between;
-    height: 100%;
-    position: absolute;
-    top: 30%;
-    width: 100%;
-    z-index: 1;
-
-    & .arrow {
-      height: 30px;
-      width: 30px;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      &.left {
-        background-image: url(../../assets/icons/arrow.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-left: 5px;
-        transform: rotate(180deg);
-      }
-
-      &.right {
-        background-image: url(../../assets/icons/arrow.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-right: 5px;
-      }
-    }
+  & .text{
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 700px;
   }
+}
+
+.slider-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.slick-slider {
+  max-width: 900px; /* Максимальная ширина слайдера */
 }

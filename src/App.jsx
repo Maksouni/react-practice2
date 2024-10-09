@@ -2,7 +2,9 @@
 import './App.css'
 import Button from './components/Button/Button'
 import NavBar from './components/NavBar/NavBar'
-import Slider from './components/Slider/Slider'
+import LandingPageSlider from './components/Slider/Slider'
+import Slide from './components/Slider/Slide.jsx'
+
 
 function App() {
   const slideData = [
@@ -23,14 +25,15 @@ function App() {
     },
   ]
 
-  // const slides = slideData.map((slide, index) => (
-  //   <Slide key={index} startup={slide.startup} title={slide.title} text={slide.text} />
-  // ));
+  const slides = slideData.map((slide, index) => (
+    <Slide key={index} startup={slide.startup} title={slide.title} text={slide.text} />
+  ));
 
   return (
     <>
       <header><NavBar /></header>
-      <Slider />
+      <LandingPageSlider items={slides}/>
+      
       
     </>
   )

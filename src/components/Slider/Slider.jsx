@@ -1,68 +1,22 @@
-import { createContext } from "react";
-import { useState } from "react";
-import Arrows from './Arrows'
-import SlidesList from './Slides/SlidesList'
-import Dots from './Dots/Dots'
+/* eslint-disable react/prop-types */
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './styles.scss'
 
-export const SliderContext = createContext();
-
-export default function Slider(){
-    const [slide, setSlide] = useState(0)
-    const items = [
-        {
-            startup: "Startup 3",
-            title: "Forget About Code",
-            text: "Blablablablablablablablablablablablabla"
-        },
-        {
-            startup: "Startup 4",
-            title: "Forget About Code",
-            text: "Blablablablablablablablablablablablabla"
-        },
-        {
-            startup: "Startup 5",
-            title: "Forget About Code",
-            text: "Blablablablablablablablablablablablabla"
-        },
-        {
-            startup: "Startup 6",
-            title: "Forget About Code",
-            text: "Blablablablablablablablablablablablabla"
-        }
-    ];
-
-    const changeSlide = (direction = 1) => {
-        let slideNumber = 0;
-
-        if(slide + direction < 0){
-            slideNumber = items.length - 1;
-        } else {
-            slideNumber = (slide + direction) % items.length
-        }
-
-        setSlide(slideNumber)
+export default function LandingPageSlider({ items }) {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
     }
-
-    const goToSlide = (number) => {
-        setSlide(number % items.length);
-      };
-
-
-    return(
-        <div className="slider">
-            <SliderContext.Provider
-                value={{
-                    goToSlide,
-                    changeSlide,
-                    slidesCount: items.length,
-                    slideNumber: slide,
-                    items,
-                  }}
-            >
-                <Arrows />
-                <SlidesList />
-                <Dots />
-            </SliderContext.Provider>
+    return (
+        <div className="slider-container">
+            <Slider {...settings}>
+                {items}
+            </Slider>
         </div>
     )
 }
