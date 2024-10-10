@@ -16,11 +16,11 @@ export default function LandingPageSlider({ items }) {
             <div
                 className="custom-dot"
                 style={{
-                    width: '10px',
-                    height: '10px',
+                    width: '7px',
+                    height: '7px',
                     borderRadius: '100%',
                     border: '2px solid #FFFFFF4D',
-                    margin: '0 10px',
+                    margin: '0 5px',
                     cursor: 'pointer',
                 }}
             />
