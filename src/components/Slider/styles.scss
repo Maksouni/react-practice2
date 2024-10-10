@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 50vh; 
 }
 
 .slick-slider {
@@ -60,14 +60,14 @@
 }
 
 .slick-prev {
-  left: 10px;
+  left: 30px;
   svg{
     transform: rotate(180deg);
   }
 }
 
 .slick-next {
-  right: 10px;
+  right: 0px;
 }
 
 .slick-next::before {
