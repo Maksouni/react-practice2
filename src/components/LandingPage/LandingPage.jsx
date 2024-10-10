@@ -40,7 +40,7 @@ export default function LandingPage() {
         <div className="landing">
             <div className="content">
                 <LandingPageSlider items={slides} />
-                <Button text='Create an Account' width='230px'/>
+                <Button text='Create an Account' width='230px' />
             </div>
         </div>
     )

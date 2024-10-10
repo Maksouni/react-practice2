@@ -34,7 +34,7 @@
 }
 
 .slick-slider {
-  max-width: 1200px; /* Максимальная ширина слайдера */
+  max-width: 900px; /* Максимальная ширина слайдера */
 }
 
 .slick-dots{
@@ -60,14 +60,14 @@
 }
 
 .slick-prev {
-  left: 30px;
+  left: -10%;
   svg{
     transform: rotate(180deg);
   }
 }
 
 .slick-next {
-  right: 0px;
+  right: -13%;
 }
 
 .slick-next::before {

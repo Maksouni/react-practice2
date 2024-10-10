@@ -7,9 +7,5 @@
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.3);
     border-width: 0;
+    cursor: pointer;
 }
-
-.button:hover{
-    background-color: white;
-}
-
