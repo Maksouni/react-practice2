@@ -9,6 +9,16 @@ import Slide from './components/Slider/Slide.jsx'
 function App() {
   const slideData = [
     {
+      startup: "Startup 1", 
+      title: "Forget About Code",
+      text: "Startup Framework gives you complete freedom over your creative process — you don’t have to think about any technical aspects. There are no limits and absolutely no coding. "
+    },
+    {
+      startup: "Startup 2", 
+      title: "Forget About Code",
+      text: "Startup Framework gives you complete freedom over your creative process — you don’t have to think about any technical aspects. There are no limits and absolutely no coding. "
+    },
+    {
       startup: "Startup 3", 
       title: "Forget About Code",
       text: "Startup Framework gives you complete freedom over your creative process — you don’t have to think about any technical aspects. There are no limits and absolutely no coding. "
@@ -33,7 +43,7 @@ function App() {
     <>
       <header><NavBar /></header>
       <LandingPageSlider items={slides}/>
-      
+      {/* <Slide startup="Startup 5" title="Forget About Code" text="blablabla"></Slide> */}
       
     </>
   )
